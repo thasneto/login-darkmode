@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login Dark/Light Mode</title>
+	<link rel="stylesheet" href="assets/css/estilo.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+</head>
+<body>
+	<main id="container">
+
+		<form id="login_form">
+			<!-- FORM HEADER -->
+
+            <div id="form_header">
+                <h1>Login</h1>
+                <i id="mode_icon" class="fa-solid fa-moon"></i>
+            </div>
+
+            <!-- SOCIAL MEDIA LINKS -->
+            <div id="social_media">
+
+                <!-- FACEBOOK -->
+                <a target="_blank" href="https://www.facebook.com">
+                    <img src="assets/img/facebook.svg" alt="">
+                </a>
+
+                <!-- GOOGLE -->
+                <a target="_blank" href="https://accounts.google.com/InteractiveLogin/identifier">
+                    <img src="assets/img/google.svg" alt="Google logo">
+                </a>
+                
+                <!-- GITHUB -->
+                <a target="_blank" href="https://github.com/login">
+                    <img src="assets/img/github.svg" alt="">
+                </a>
+            </div>
+
+            <!-- INPUTS -->
+            <div id="inputs">
+
+                <!-- NAME -->
+                <div class="input-box">
+                    <label for="name">
+                        Name
+                        <div class="input-field">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="name" name="name">
+                        </div>
+                    </label>
+                </div>
+                
+                <!-- EMAIL -->
+                <div class="input-box">
+                    <label for="email">
+                        E-mail
+                        <div class="input-field">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" id="email" name="email">
+                        </div>
+                    </label>
+                </div>
+                
+                <!-- PASSWORD -->
+                <div class="input-box">
+                    <label for="password">
+                        Password
+                        <div class="input-field">
+                            <i class="fa-solid fa-key"></i>
+                            <input type="password" id="password" name="password">
+                        </div>
+                    </label>
+                    
+                    <!-- FORGOT PASSWORD -->
+                    <div id="forgot_password">
+                        <a href="#">
+                            Forgot your password?
+                        </a>
+					</div>
+				</div>
+			</div>
+
+			<!-- LOGIN BUTTON -->
+            <button type="submit" id="login_button">
+                Login
+            </button>
+		</form>
+	</main>
+
+	<script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+</html>
